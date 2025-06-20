@@ -30,7 +30,7 @@ export default function Partners() {
       id: 4,
       src: "/mode.png",
       alt: "Mira Network",
-      width: 20,
+      width: 250,
       height: 200,
       category: "extra-large",
     },
@@ -38,7 +38,7 @@ export default function Partners() {
       id: 5,
       src: "/5.png",
       alt: "Mode Network",
-      width: 20,
+      width: 250,
       height: 200,
       category: "extra-large",
     },
@@ -56,7 +56,7 @@ export default function Partners() {
       alt: "Aethir",
       width: 150,
       height: 80,
-      category: "small",
+      category: "medium",
     },
     {
       id: 8,
@@ -64,7 +64,7 @@ export default function Partners() {
       alt: "SendAI",
       width: 160,
       height: 100,
-      category: "extra-small",
+      category: "standard",
     },
   ];
 
@@ -79,31 +79,31 @@ export default function Partners() {
       case "small":
         return {
           container:
-            "flex items-center justify-center px-4 py-5 rounded-lg backdrop-blur-sm w-[160px] h-[150px] md:w-[180px] md:h-[170px]",
+            "flex items-center justify-center px-5 py-5 rounded-lg backdrop-blur-sm w-[160px] h-[150px] md:w-[180px] md:h-[170px]",
           image: "w-full h-auto object-contain max-h-[80px]",
         };
       case "medium":
         return {
           container:
-            "flex items-center justify-center px-4 py-7 rounded-lg backdrop-blur-sm w-[200px] h-[150px] md:w-[220px] md:h-[170px]",
+            "flex items-center justify-center px-7 py-7 rounded-lg backdrop-blur-sm w-[200px] h-[150px] md:w-[220px] md:h-[170px]",
           image: "w-full h-auto object-contain max-h-[115px]",
         };
       case "large":
         return {
           container:
-            "flex items-center justify-center px-4 py-8 rounded-lg backdrop-blur-sm w-[220px] h-[170px] md:w-[220px] md:h-[170px]",
+            "flex items-center justify-center px-8 py-8 rounded-lg backdrop-blur-sm w-[220px] h-[150px] md:w-[220px] md:h-[170px]",
           image: "w-full h-auto object-contain max-h-[180px]",
         };
       case "extra-large":
         return {
           container:
-            "flex items-center justify-center px-4 py-10 rounded-lg backdrop-blur-sm w-[260px] h-[150px] md:w-[280px] md:h-[170px]",
+            "flex items-center justify-center px-10 py-10 rounded-lg backdrop-blur-sm w-[260px] h-[150px] md:w-[280px] md:h-[170px]",
           image: "w-full h-auto object-contain max-h-[200px]",
         };
       default: // standard
         return {
           container:
-            "flex items-center justify-center px-4 py-6 rounded-lg backdrop-blur-sm w-[180px] h-[120px] md:w-[200px] md:h-[170px]",
+            "flex items-center justify-center px-6 py-6 rounded-lg backdrop-blur-sm w-[180px] h-[150px] md:w-[200px] md:h-[170px]",
           image: "w-full h-auto object-contain max-h-[100px]",
         };
     }
