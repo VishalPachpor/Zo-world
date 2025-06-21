@@ -27,13 +27,13 @@ export default function Home() {
         <div id="agenda">
           <Launchpads />
         </div>
-        <Success />
+        <div id="testimonials">
+          <Success />
+        </div>
         <div id="mentors">
           <LearnMore />
         </div>
-        <div id="testimonials">
-          <FAQ />
-        </div>
+        <FAQ />
         <Newsletter />
         <Footer />
       </div>
