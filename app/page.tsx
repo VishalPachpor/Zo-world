@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Navbar />
-      <div className="pt-24 md:pt-22">
+      <div className="pt-20 md:pt-18">
         <HeroSection />
         <Partners />
         <div id="about">

@@ -157,7 +157,7 @@ export default function Footer() {
               Ready to be part of the next wave of innovation? Apply now for our
               upcoming cohort.
             </p>
-            <Link href="#apply" className="inline-block">
+            <Link href="https://tally.so/r/mYyYk6" className="inline-block">
               <button className="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors">
                 Try For Now
               </button>

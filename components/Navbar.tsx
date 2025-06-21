@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -32,17 +33,17 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 flex items-center justify-between p-4 md:p-6 lg:p-8 w-full bg-black/80 backdrop-blur-sm border-b border-gray-800/50 z-50">
-        <div className="flex items-center">
+      <nav className="fixed top-0 left-0 right-0 flex items-center justify-between p-4 md:py-3 md:px-6 lg:py-4 lg:px-8 w-full bg-black/80 backdrop-blur-sm border-b border-gray-800/50 z-50">
+        <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
             alt="EAK Logo"
             width={60}
             height={60}
-            className="object-contain md:w-[80px] md:h-[80px]"
+            className="object-contain md:w-[60px] md:h-[60px]"
             priority
           />
-        </div>
+        </Link>
         <div className="flex-1" />
 
         {/* Desktop Nav */}
@@ -84,19 +85,9 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
-            <div className="w-6 h-6 flex items-center justify-center">
-              <Image
-                src="/cross.png"
-                alt="Close menu"
-                width={20}
-                height={20}
-                className="transition-all duration-300 text-white bg-white"
-                priority
-                onError={(e) => {
-                  console.error("Error loading cross.png");
-                  e.currentTarget.style.display = "none";
-                }}
-              />
+            <div className="relative w-6 h-6 flex items-center justify-center">
+              <span className="absolute block w-6 h-0.5 bg-white transform rotate-45 transition-all duration-300"></span>
+              <span className="absolute block w-6 h-0.5 bg-white transform -rotate-45 transition-all duration-300"></span>
             </div>
           ) : (
             <div className="flex flex-col justify-center items-center gap-1.5">
