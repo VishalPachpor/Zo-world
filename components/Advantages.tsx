@@ -47,8 +47,9 @@ export default function Advantages() {
                   Flexible Program Structure
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Enjoy a fully remote program tailored to fit your schedule and
-                  lifestyle.
+                  Fully remote and founder-friendly — designed to fit your
+                  lifestyle, with mentorship and resources structured for both
+                  early and growth-stage teams.
                 </p>
               </div>
             </div>
