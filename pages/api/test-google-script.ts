@@ -8,20 +8,26 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { email } = req.method === "POST" ? req.body : req.query;
-  if (!email) {
-    return res.status(400).json({ error: "Email is required" });
-  }
   try {
     const response = await fetch(GOOGLE_SCRIPT_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email: "test@example.com" }),
     });
+
     const text = await response.text();
-    res.status(200).json({ result: text });
+    const status = response.status;
+
+    res.status(200).json({
+      status,
+      response: text,
+      url: GOOGLE_SCRIPT_URL,
+      success: response.ok,
+    });
   } catch (error) {
-    console.error("Newsletter API error:", error);
-    res.status(500).json({ error: "Failed to submit email" });
+    res.status(500).json({
+      error: error.message,
+      url: GOOGLE_SCRIPT_URL,
+    });
   }
 }
