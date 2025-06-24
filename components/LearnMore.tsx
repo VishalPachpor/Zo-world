@@ -26,9 +26,14 @@ export default function LearnMore() {
                 the industry.
               </p>
               <div className="flex gap-6 mt-8">
-                <button className="border border-white text-white px-6 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">
+                <a
+                  href="https://vishals-organization-22.gitbook.io/product-docs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-6 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 flex items-center justify-center"
+                >
                   Learn More
-                </button>
+                </a>
                 <button className="flex items-center gap-2 text-white hover:text-[#a259ff] transition-colors duration-300">
                   Sign Up →
                 </button>
