@@ -31,7 +31,9 @@ export default function Launchpads() {
               partners to speed up your growth.
             </p>
             <a
-              href="#explore"
+              href="https://eakdigital.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[#a259ff] hover:text-[#7c3aed] transition-colors duration-300 flex items-center gap-2"
             >
               Explore →
@@ -55,7 +57,9 @@ export default function Launchpads() {
               innovation.
             </p>
             <a
-              href="#connect"
+              href="https://www.linkedin.com/in/shabbiryk/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[#a259ff] hover:text-[#7c3aed] transition-colors duration-300 flex items-center gap-2"
             >
               Connect →

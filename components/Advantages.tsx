@@ -114,9 +114,14 @@ export default function Advantages() {
           <button className="bg-[#7c3aed] hover:bg-[#a259ff] text-white font-semibold py-3 px-8 rounded-xl text-base transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
             Apply
           </button>
-          <button className="border border-[#7c3aed] text-white font-semibold py-3 px-8 rounded-xl text-base transition-all duration-300 hover:bg-[#7c3aed]/10 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+          <a
+            href="https://www.linkedin.com/in/shabbiryk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-[#7c3aed] text-white font-semibold py-3 px-8 rounded-xl text-base transition-all duration-300 hover:bg-[#7c3aed]/10 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 flex items-center justify-center"
+          >
             Connect →
-          </button>
+          </a>
         </div>
       </div>
     </section>

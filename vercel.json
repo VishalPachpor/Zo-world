@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.eakdigital.com/ai-accelerator",
+      "permanent": true
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import Partners from "@/components/Partners";
 import About from "@/components/About";
 import Advantages from "@/components/Advantages";
 import Launchpads from "@/components/Launchpads";
+import ProgramAgenda from "@/components/ProgramAgenda";
 import Success from "@/components/Success";
 import LearnMore from "@/components/LearnMore";
 import FAQ from "@/components/FAQ";
@@ -22,8 +23,9 @@ export default function Home() {
         </div>
         <Advantages />
         <div id="agenda">
-          <Launchpads />
+          <ProgramAgenda />
         </div>
+        <Launchpads />
         <div id="testimonials">
           <Success />
         </div>

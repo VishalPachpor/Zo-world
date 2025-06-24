@@ -5,8 +5,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
-  {
+  const faqs = [
+    {
     question: "Who should apply?",
     answer: (
       <div className="space-y-4">
@@ -37,8 +37,8 @@ const faqs = [
         </p>
       </div>
     ),
-  },
-  {
+    },
+    {
     question: "Should non-crypto-native or Web2.5 startups apply?",
     answer: (
       <div className="space-y-4">
@@ -80,8 +80,8 @@ const faqs = [
   {
     question: "When does the program start?",
     answer: "This cohort, starts on Aug 12, 2025.",
-  },
-  {
+    },
+    {
     question: "How much does the program cost?",
     answer: (
       <div className="space-y-4">
@@ -109,11 +109,11 @@ const faqs = [
   },
   {
     question: "Do you invest in tokens only?",
-    answer:
+      answer:
       "No. We invest in both equity and tokens. (And we'll never push you to launch a token.)",
-  },
-  {
-    question:
+    },
+    {
+      question:
       "I need funding now, I can't wait for the cohort to start and get over. What should I do?",
     answer: (
       <div className="space-y-4">
@@ -140,8 +140,8 @@ const faqs = [
         </p>
       </div>
     ),
-  },
-  {
+    },
+    {
     question: "How is the program structured?",
     answer: (
       <div className="space-y-4">
@@ -217,8 +217,8 @@ const faqs = [
         </p>
       </div>
     ),
-  },
-];
+    },
+  ];
 
 export default function FAQ() {
   return (
