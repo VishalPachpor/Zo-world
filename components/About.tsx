@@ -9,11 +9,11 @@ export default function About() {
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <Image
-                src="/about.png"
+                src="/about_img.png"
                 alt="About Us"
                 width={500}
                 height={400}
-                className="w-full max-w-[500px] h-auto rounded-lg"
+                className="w-full max-w-[500px] h-auto rounded-2xl"
                 priority
               />
               {/* Optional gradient overlay */}
