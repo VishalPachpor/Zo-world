@@ -11,14 +11,6 @@ export default function Partners() {
       category: "standard",
     },
     {
-      id: 2,
-      src: "/2.png",
-      alt: "Hey Anon",
-      width: 60,
-      height: 60,
-      category: "extra-small",
-    },
-    {
       id: 3,
       src: "/3.png",
       alt: "Virtuals",

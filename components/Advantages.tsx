@@ -57,12 +57,12 @@ export default function Advantages() {
 
           {/* Middle Column - Image */}
           <div className="flex justify-center items-center">
-            <div className="relative w-full max-w-[400px] aspect-square rounded-2xl">
+            <div className="relative w-full max-w-[400px] aspect-square rounded-3xl overflow-hidden">
               <Image
                 src="/why_img.png"
                 alt="AI Accelerator"
                 fill
-                className="object-contain rounded-2xl"
+                className="object-contain rounded-3xl"
                 priority
               />
             </div>
