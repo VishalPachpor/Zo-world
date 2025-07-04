@@ -13,30 +13,26 @@ export default function Launchpads() {
 
         {/* Lower Section - 3 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-          {/* EAK Network */}
-          <div className="flex flex-col items-center text-center">
+          {/* ZO Network */}
+          <div className=" rounded-2xl p-8 flex flex-col items-center text-center space-y-4">
             <Image
-              src="/Vector.png"
-              alt="EAK Network"
-              width={64}
-              height={64}
-              className="mb-6"
+              src="/partnership.png"
+              alt="ZO Network"
+              width={100}
+              height={100}
+              className="rounded-lg"
             />
-            <h3 className="text-2xl font-semibold text-white mb-4">
-              EAK Network
-            </h3>
-            <p className="text-gray-300 text-base leading-relaxed mb-4">
-              Gain direct access to infrastructure providers, investors,
-              mentors, foundations, exchanges, market makers and other essential
-              partners to speed up your growth.
+            <h3 className="text-xl font-bold text-white">ZO Network</h3>
+            <p className="text-gray-400 text-sm">
+              Access to a powerful network of AI and crypto leaders
             </p>
             <a
-              href="https://eakdigital.com/"
+              href="https://zo.xyz/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#a259ff] hover:text-[#7c3aed] transition-colors duration-300 flex items-center gap-2"
+              className="text-purple-400 hover:text-purple-300 text-sm font-medium"
             >
-              Explore →
+              Learn More →
             </a>
           </div>
 
@@ -79,8 +75,8 @@ export default function Launchpads() {
               Media presence
             </h3>
             <p className="text-gray-300 text-base leading-relaxed mb-4">
-              Get exposure to E global Web3-native audience and boost brand
-              awareness by leveraging AK Wire's leading position in crypto
+              Get exposure to a global Web3-native audience and boost brand
+              awareness by leveraging ZO World's leading position in crypto
               media.
             </p>
             <a

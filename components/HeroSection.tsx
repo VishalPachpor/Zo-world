@@ -80,7 +80,7 @@ export default function HeroSection() {
               Web3 x AI networks.
             </p>
             <a
-              href="https://tally.so/r/mYyYk6"
+              href="https://zostel.typeform.com/zo-accelerator"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#7c3aed] hover:bg-[#a259ff] text-white font-semibold py-3 px-8 sm:py-4 sm:px-10 rounded-xl text-base sm:text-lg shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 w-full sm:w-auto text-center"

@@ -22,11 +22,9 @@ export default function Success() {
           {/* Right Side - Paragraph */}
           <div className="flex items-center mt-10">
             <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-[500px]">
-              EAK has empowered over 300 projects, driving innovation in the AI
-              x Crypto space. We proudly hosted major events like Istanbul
-              Blockchain Week and DefAI Con, showcasing the brilliance of our
-              founders. With a global presence spanning Turkey, Southeast Asia,
-              and India, we continue to make waves in the industry.
+              ZO has empowered over 300 projects, driving innovation in the AI
+              and crypto space. Our founders consistently deliver groundbreaking
+              solutions with measurable impact.
             </p>
           </div>
         </div>

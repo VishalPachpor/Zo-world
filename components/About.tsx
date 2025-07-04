@@ -31,12 +31,12 @@ export default function About() {
             </div>
 
             <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-[500px]">
-              We're serious about building the AI x Crypto vertical. Through our
-              6-week virtual accelerator, we help founders scale breakthroughs
-              in AI agents, privacy-preserving ML, and decentralized
-              infrastructures for data, compute, and models.
+              We're building the future of AI x Crypto innovation. Through our
+              6-week virtual accelerator, we connect founders with ZO's global
+              network of travelers, creators, and technologists to scale
+              breakthroughs in AI agents, privacy-preserving ML, and
+              decentralized infrastructures for data, compute, and models.
             </p>
-
           </div>
         </div>
       </div>

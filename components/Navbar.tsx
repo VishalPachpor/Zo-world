@@ -36,11 +36,11 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 flex items-center justify-between p-4 md:py-3 md:px-6 lg:py-4 lg:px-8 w-full bg-black/80 backdrop-blur-sm border-b border-gray-800/50 z-50">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
-            alt="EAK Logo"
-            width={60}
+            src="/zo-logo.png"
+            alt="ZO Logo"
+            width={180}
             height={60}
-            className="object-contain md:w-[60px] md:h-[60px]"
+            className="h-12 md:h-16 w-auto"
             priority
           />
         </Link>

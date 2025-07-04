@@ -1,12 +1,13 @@
 "use client";
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function ProgramAgenda() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const [videosLoaded, setVideosLoaded] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
-  const images = ["/Agenda1.jpg", "/Agenda2.jpeg", "/Agenda3.jpg"];
+  const videos = ["/demoday1.MOV", "/demoday2.MOV"];
 
   const weeks = [
     {
@@ -15,7 +16,7 @@ export default function ProgramAgenda() {
       emoji: "🎯",
       items: [
         "Program onboarding & goal alignment",
-        "Meet EAK mentors, team, and fellow cohort founders",
+        "Meet ZO mentors, team, and fellow cohort founders",
         "Define your AI x Crypto value proposition & market narrative",
         "Align on milestones and KPIs for the 6-week sprint",
       ],
@@ -39,7 +40,7 @@ export default function ProgramAgenda() {
         "Build a compelling investor pitch narrative",
         "Design a winning deck and one-pager",
         "Understand token vs equity fundraising strategies",
-        "Start preparing for investor intros via EAK's Tier 1 VC network",
+        "Start preparing for investor intros via ZO's Tier 1 VC network",
       ],
     },
     {
@@ -59,8 +60,8 @@ export default function ProgramAgenda() {
       emoji: "🎙️",
       items: [
         "Refine your pitch with 1:1 mentor feedback",
-        "Build PR & marketing narratives with EAK Digital",
-        "Prepare outreach to EAK's 80+ KOL network for awareness",
+        "Build PR & marketing narratives with ZO World",
+        "Prepare outreach to ZO's 80+ KOL network for awareness",
         "Finalize demo materials: pitch, visuals, traction",
       ],
     },
@@ -87,37 +88,70 @@ export default function ProgramAgenda() {
     "Present your project live to VCs, angels, and launchpads on Demo Day, generate real-time interest, and celebrate graduation with continued support for fundraising and scaling.",
   ];
 
-  // Auto-rotate images
+  // Auto-rotate videos
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000); // Slightly slower rotation for better viewing
+      setCurrentVideo((prev) => (prev + 1) % videos.length);
+    }, 8000); // Longer rotation for videos
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [videos.length]);
 
-  // Handle image loading
+  // Handle video loading
   useEffect(() => {
-    const loadImages = async () => {
-      const imagePromises = images.map((src) => {
+    const loadVideos = async () => {
+      const videoPromises = videos.map((src) => {
         return new Promise((resolve, reject) => {
-          const img = new window.Image();
-          img.onload = resolve;
-          img.onerror = reject;
-          img.src = src;
+          const video = document.createElement("video");
+          video.onloadeddata = resolve;
+          video.onerror = reject;
+          video.src = src;
         });
       });
 
       try {
-        await Promise.all(imagePromises);
-        setImagesLoaded(true);
+        await Promise.all(videoPromises);
+        setVideosLoaded(true);
       } catch (error) {
-        console.error("Error loading images:", error);
-        setImagesLoaded(true); // Still show the component even if some images fail
+        console.error("Error loading videos:", error);
+        setVideosLoaded(true); // Still show the component even if some videos fail
       }
     };
 
-    loadImages();
-  }, [images]);
+    loadVideos();
+  }, [videos]);
+
+  // Handle video playback when currentVideo changes
+  useEffect(() => {
+    if (videosLoaded) {
+      // Pause all videos first
+      videoRefs.current.forEach((video, index) => {
+        if (video) {
+          video.pause();
+        }
+      });
+
+      // Play the current video with better error handling
+      const currentVideoElement = videoRefs.current[currentVideo];
+      if (currentVideoElement) {
+        currentVideoElement.currentTime = 0; // Reset to beginning
+
+        // Check if the video can play
+        const playPromise = currentVideoElement.play();
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Video started playing successfully
+            })
+            .catch((error) => {
+              // Auto-play was prevented
+              console.log("Autoplay prevented:", error.message);
+              // Video will show first frame and user can click to play
+            });
+        }
+      }
+    }
+  }, [currentVideo, videosLoaded]);
 
   // Grouped weeks for display
   const groupedWeeks = [
@@ -159,32 +193,36 @@ export default function ProgramAgenda() {
           </p>
         </div>
 
-        {/* Image Carousel */}
+        {/* Video Carousel */}
         <div className="relative mx-auto mb-10 rounded-2xl overflow-hidden bg-gray-900 w-[260px] sm:w-[340px] md:w-[700px] lg:w-[800px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
-          {!imagesLoaded && (
+          {!videosLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-8 h-8 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
             </div>
           )}
-          {images.map((image, index) => (
+          {videos.map((video, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentImage && imagesLoaded
+                index === currentVideo && videosLoaded
                   ? "opacity-100"
                   : "opacity-0"
               }`}
             >
-              <Image
-                src={image}
-                alt={`EAK Accelerator Program - Image ${index + 1}`}
-                fill
-                className="object-cover object-center w-full h-full"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-                priority={index === 0}
-                quality={90}
+              <video
+                ref={(el) => {
+                  videoRefs.current[index] = el;
+                }}
+                src={video}
+                className="w-full h-full object-cover object-center"
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
                 onError={() => {
-                  console.error(`Failed to load image: ${image}`);
+                  console.error(`Failed to load video: ${video}`);
                 }}
               />
             </div>
@@ -193,14 +231,54 @@ export default function ProgramAgenda() {
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
 
-          {/* Dots indicator */}
+          {/* Play/Pause button overlay */}
+          <div className="absolute inset-0 flex items-center justify-center z-20">
+            <button
+              onClick={() => {
+                const currentVideoElement = videoRefs.current[currentVideo];
+                if (currentVideoElement) {
+                  if (currentVideoElement.paused) {
+                    currentVideoElement.play().catch((error) => {
+                      console.log("Play failed:", error.message);
+                    });
+                  } else {
+                    currentVideoElement.pause();
+                  }
+                }
+              }}
+              className={`bg-black/50 hover:bg-black/70 text-white p-4 rounded-full transition-all duration-300 ${
+                isPlaying ? "opacity-0 hover:opacity-100" : "opacity-100"
+              }`}
+              aria-label={isPlaying ? "Pause video" : "Play video"}
+            >
+              {isPlaying ? (
+                <svg
+                  className="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* Video controls and dots indicator */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-            {images.map((_, index) => (
+            {videos.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentImage(index)}
+                onClick={() => setCurrentVideo(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentImage
+                  index === currentVideo
                     ? "bg-white scale-110"
                     : "bg-white/50 hover:bg-white/75"
                 }`}
@@ -245,7 +323,7 @@ export default function ProgramAgenda() {
             Ready to accelerate your AI x Crypto startup?
           </p>
           <a
-            href="https://tally.so/r/mYyYk6"
+            href="https://zostel.typeform.com/zo-accelerator"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-colors text-lg"

@@ -17,11 +17,11 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <Image
-                src="/logo.png"
-                alt="EAK Logo"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
+                src="/zo-logo.png"
+                alt="ZO Logo"
+                width={160}
+                height={53}
+                className="h-14 w-auto"
               />
             </div>
             <p className="text-gray-400 text-sm max-w-xs">
@@ -31,7 +31,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-4">
               <Link
-                href="https://www.linkedin.com/company/eak-digital/"
+                href="https://www.linkedin.com/company/zo-world/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -40,7 +40,7 @@ export default function Footer() {
                 <LinkedinIcon className="w-5 h-5 text-white" />
               </Link>
               <Link
-                href="https://x.com/eak_digital"
+                href="https://x.com/zo_world"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
@@ -56,24 +56,20 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Get In Touch</h3>
             <div className="space-y-4">
               <a
-                href="mailto:erhan.korhaliller@eakdigital.com"
+                href="mailto:accelerator@zo.xyz"
                 className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors"
               >
                 <MailIcon className="w-5 h-5" />
-                <span className="text-sm">
-                  erhan.korhaliller@eakdigital.com
-                </span>
+                <span className="text-sm">accelerator@zo.xyz</span>
               </a>
               <a
-                href="https://t.me/EAK_Erhan"
+                href="https://t.me/ZO_Accelerator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors"
               >
                 <SendIcon className="w-5 h-5" />
-                <span className="text-sm">
-                  Telegram: @EAK_Erhan | @Shabbiryk
-                </span>
+                <span className="text-sm">Telegram: @ZO_Accelerator</span>
               </a>
               <div className="flex items-center space-x-3 text-gray-400">
                 <CalendarDaysIcon className="w-5 h-5" />
@@ -122,7 +118,10 @@ export default function Footer() {
               Ready to be part of the next wave of innovation? Apply now for our
               upcoming cohort.
             </p>
-            <Link href="https://tally.so/r/mYyYk6" className="inline-block">
+            <Link
+              href="https://zostel.typeform.com/zo-accelerator"
+              className="inline-block"
+            >
               <button className="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors">
                 Try For Now
               </button>
@@ -133,7 +132,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © 2025 EAK Digital. All Rights Reserved.
+            © 2025 ZO World. All Rights Reserved.
           </p>
           <p className="text-gray-400 text-sm">
             Made With 💜 For Founders Building The Future.

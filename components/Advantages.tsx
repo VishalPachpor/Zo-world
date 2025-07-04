@@ -111,9 +111,14 @@ export default function Advantages() {
 
         {/* Buttons */}
         <div className="flex justify-center gap-6">
-          <button className="bg-[#7c3aed] hover:bg-[#a259ff] text-white font-semibold py-3 px-8 rounded-xl text-base transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+          <a
+            href="https://zostel.typeform.com/zo-accelerator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#7c3aed] hover:bg-[#a259ff] text-white font-semibold py-3 px-8 rounded-xl text-base transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 inline-block text-center"
+          >
             Apply
-          </button>
+          </a>
           <a
             href="https://www.linkedin.com/in/shabbiryk/"
             target="_blank"

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "EAK Accelerator",
+  title: "ZO Accelerator",
   description:
-    "EAK Accelerator - Fueling the next wave of innovation at the intersection of AI and blockchain",
-  generator: "EAK Accelerator",
+    "ZO Accelerator - Fueling the next wave of innovation at the intersection of AI and blockchain",
+  generator: "ZO Accelerator",
   icons: {
-    icon: [{ url: "/logo.png" }, { url: "/favicon.png" }],
+    icon: [{ url: "/zo-logo.png" }, { url: "/favicon.png" }],
     shortcut: "/favicon.png",
-    apple: "/logo.png",
+    apple: "/zo-logo.png",
   },
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/zo-logo.png" />
       </head>
       <body className="font-sans">{children}</body>
     </html>

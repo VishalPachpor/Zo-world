@@ -44,11 +44,12 @@ export default function LearnMore() {
           {/* Right Side - Image */}
           <div className="relative rounded-2xl overflow-hidden">
             <Image
-              src="/image.png"
-              alt="EAK Visibility"
+              src="/demo1.jpg"
+              alt="Demo Day Presentation"
               width={600}
-              height={400}
-              className="w-full h-full object-cover"
+              height={300}
+              className="w-full h-auto rounded-lg"
+              priority
             />
           </div>
         </div>
@@ -58,10 +59,10 @@ export default function LearnMore() {
           {/* Left Side - Image */}
           <div className="relative rounded-2xl overflow-hidden">
             <Image
-              src="/image2.png"
+              src="/demo2.jpg"
               alt="AI and Blockchain"
               width={600}
-              height={400}
+              height={300}
               className="w-full h-full object-cover"
             />
           </div>

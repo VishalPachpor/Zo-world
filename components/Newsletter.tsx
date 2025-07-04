@@ -39,13 +39,13 @@ export default function Newsletter() {
           <div className="max-w-[800px] mx-auto text-center">
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              SUBSCRIBE FOR THE LATEST AI INNOVATIONS
+              SUBSCRIBE FOR THE LATEST ZO INNOVATIONS
             </h2>
 
             {/* Subtext */}
             <p className="text-gray-200 text-base md:text-lg mb-8">
-              Be part of the future in AI and crypto. Let&apos;s innovate
-              together for a better tomorrow.
+              Join the ZO community and stay updated on AI x Crypto innovations.
+              Let&apos;s build the future together.
             </p>
 
             {/* Email Form */}

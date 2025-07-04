@@ -5,8 +5,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-  const faqs = [
-    {
+const faqs = [
+  {
     question: "Who should apply?",
     answer: (
       <div className="space-y-4">
@@ -31,14 +31,14 @@ import {
           economics, regulations, and go-to-market.
         </p>
         <p>
-          At EAK, we have helped founders expand their crypto network and
-          connect with other top-tier builders, leading to direct impact in
-          sales, user testing, partnership, and fundraising efforts.
+          At ZO, we have helped founders expand their crypto network and connect
+          with other top-tier builders, leading to direct impact in sales, user
+          testing, partnership, and fundraising efforts.
         </p>
       </div>
     ),
-    },
-    {
+  },
+  {
     question: "Should non-crypto-native or Web2.5 startups apply?",
     answer: (
       <div className="space-y-4">
@@ -80,8 +80,8 @@ import {
   {
     question: "When does the program start?",
     answer: "This cohort, starts on Aug 12, 2025.",
-    },
-    {
+  },
+  {
     question: "How much does the program cost?",
     answer: (
       <div className="space-y-4">
@@ -109,23 +109,23 @@ import {
   },
   {
     question: "Do you invest in tokens only?",
-      answer:
+    answer:
       "No. We invest in both equity and tokens. (And we'll never push you to launch a token.)",
-    },
-    {
-      question:
+  },
+  {
+    question:
       "I need funding now, I can't wait for the cohort to start and get over. What should I do?",
     answer: (
       <div className="space-y-4">
         <p>
-          If you'd like to take advantage of EAK's fundraising suppport but your
+          If you'd like to take advantage of ZO's fundraising suppport but your
           raise timeline doesn't match as of the cohort, don't worry. We've
           often supported startups by raising them before they're accelerated.
         </p>
         <p>
           Just submit your application here as you normally would. We review
           applications all year long and will invite you to an early interview
-          if your startup meets EAK's criteria.
+          if your startup meets ZO's criteria.
         </p>
       </div>
     ),
@@ -136,12 +136,12 @@ import {
       <div className="space-y-4">
         <p>We start working with teams as soon as they're admitted.</p>
         <p>
-          Our commitment is to help you succeed from the moment you join EAK.
+          Our commitment is to help you succeed from the moment you join ZO.
         </p>
       </div>
     ),
-    },
-    {
+  },
+  {
     question: "How is the program structured?",
     answer: (
       <div className="space-y-4">
@@ -160,7 +160,7 @@ import {
         <p className="font-semibold">
           1:1 Mentorship:{" "}
           <span className="font-normal">
-            Startups receive 1:1 mentorship from EAK mentors. Discussions often
+            Startups receive 1:1 mentorship from ZO mentors. Discussions often
             revolve around product, go-to-market and fundraising. At times,
             mentors may also intro founders to experts within our network
             depending on the problem at hand.
@@ -217,8 +217,8 @@ import {
         </p>
       </div>
     ),
-    },
-  ];
+  },
+];
 
 export default function FAQ() {
   return (
