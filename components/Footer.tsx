@@ -18,10 +18,11 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <Image
                 src="/zo-logo.png"
-                alt="ZO Logo"
+                alt="Zo Logo"
                 width={160}
                 height={53}
-                className="h-14 w-auto"
+                className="h-14 w-auto object-contain"
+                style={{ backgroundColor: "transparent" }}
               />
             </div>
             <p className="text-gray-400 text-sm max-w-xs">
@@ -132,7 +133,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © 2025 ZO World. All Rights Reserved.
+            © 2025 Zo World. All Rights Reserved.
           </p>
           <p className="text-gray-400 text-sm">
             Made With 💜 For Founders Building The Future.

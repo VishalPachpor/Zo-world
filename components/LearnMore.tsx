@@ -54,61 +54,7 @@ export default function LearnMore() {
           </div>
         </div>
 
-        {/* Testimonials Section */}
-        <div id="testimonials" className="mb-32">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              SUCCESS STORIES
-            </h2>
-            <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto">
-              CELEBRATING OUR IMPACTFUL SUCCESS STORIES
-            </p>
-          </div>
-
-          {/* Success Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-8">
-                <h3 className="text-4xl font-bold text-white mb-2">50+</h3>
-                <p className="text-purple-200">Intro Requests per Startup</p>
-                <p className="text-gray-300 text-sm mt-2">
-                  Average requests from top-tier VCs after Demo Day
-                </p>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-8">
-                <h3 className="text-4xl font-bold text-white mb-2">$500M+</h3>
-                <p className="text-purple-200">Portfolio Value</p>
-                <p className="text-gray-300 text-sm mt-2">
-                  Combined valuation of our accelerated startups
-                </p>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-8">
-                <h3 className="text-4xl font-bold text-white mb-2">140+</h3>
-                <p className="text-purple-200">Tier 1 VCs</p>
-                <p className="text-gray-300 text-sm mt-2">
-                  Access to leading investors in our network
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Success Story Quote */}
-          <div className="bg-gray-900/50 rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-300 italic mb-6">
-              "Each startup in our latest cohort received an average of over 50
-              intro requests after Demo Day from crypto's most value-add angels
-              and funds, including Paradigm, Coinbase, Pantera, Multicoin and
-              Dragonfly."
-            </p>
-            <p className="text-purple-400 font-semibold">
-              zo Accelerator Impact Report
-            </p>
-          </div>
-        </div>
+      
 
         {/* Lower Section - Image Left, Text Right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">

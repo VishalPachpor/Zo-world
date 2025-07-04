@@ -13,16 +13,16 @@ export default function Launchpads() {
 
         {/* Lower Section - 3 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-          {/* zo Network */}
+          {/* Zo Network */}
           <div className=" rounded-2xl p-8 flex flex-col items-center text-center space-y-4">
             <Image
               src="/Vector.png"
-              alt="zo Network"
+              alt="Zo Network"
               width={100}
               height={100}
               className="rounded-lg"
             />
-            <h3 className="text-xl font-bold text-white">zo Network</h3>
+            <h3 className="text-xl font-bold text-white">Zo Network</h3>
             <p className="text-gray-400 text-sm">
               Access to a powerful network of AI and crypto leaders
             </p>
@@ -76,7 +76,7 @@ export default function Launchpads() {
             </h3>
             <p className="text-gray-300 text-base leading-relaxed mb-4">
               Get exposure to a global Web3-native audience and boost brand
-              awareness by leveraging zo World's leading position in crypto
+              awareness by leveraging Zo World's leading position in crypto
               media.
             </p>
             <a

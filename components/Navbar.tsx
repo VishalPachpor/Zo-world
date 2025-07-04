@@ -37,10 +37,11 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <Image
             src="/zo-logo.png"
-            alt="ZO Logo"
+            alt="Zo Logo"
             width={180}
             height={60}
-            className="h-12 md:h-16 w-auto"
+            className="h-12 md:h-16 w-auto object-contain"
+            style={{ backgroundColor: "transparent" }}
             priority
           />
         </Link>

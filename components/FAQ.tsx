@@ -31,7 +31,7 @@ const faqs = [
           economics, regulations, and go-to-market.
         </p>
         <p>
-          At ZO, we have helped founders expand their crypto network and connect
+          At Zo, we have helped founders expand their crypto network and connect
           with other top-tier builders, leading to direct impact in sales, user
           testing, partnership, and fundraising efforts.
         </p>
@@ -118,14 +118,14 @@ const faqs = [
     answer: (
       <div className="space-y-4">
         <p>
-          If you'd like to take advantage of ZO's fundraising suppport but your
+          If you'd like to take advantage of Zo's fundraising suppport but your
           raise timeline doesn't match as of the cohort, don't worry. We've
           often supported startups by raising them before they're accelerated.
         </p>
         <p>
           Just submit your application here as you normally would. We review
           applications all year long and will invite you to an early interview
-          if your startup meets ZO's criteria.
+          if your startup meets Zo's criteria.
         </p>
       </div>
     ),
@@ -136,7 +136,7 @@ const faqs = [
       <div className="space-y-4">
         <p>We start working with teams as soon as they're admitted.</p>
         <p>
-          Our commitment is to help you succeed from the moment you join ZO.
+          Our commitment is to help you succeed from the moment you join Zo.
         </p>
       </div>
     ),
@@ -160,7 +160,7 @@ const faqs = [
         <p className="font-semibold">
           1:1 Mentorship:{" "}
           <span className="font-normal">
-            Startups receive 1:1 mentorship from ZO mentors. Discussions often
+            Startups receive 1:1 mentorship from Zo mentors. Discussions often
             revolve around product, go-to-market and fundraising. At times,
             mentors may also intro founders to experts within our network
             depending on the problem at hand.

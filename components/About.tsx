@@ -32,7 +32,7 @@ export default function About() {
 
             <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-[500px]">
               We're building the future of AI x Crypto innovation. Through our
-              6-week virtual accelerator, we connect founders with ZO's global
+              6-week virtual accelerator, we connect founders with Zo's global
               network of travelers, creators, and technologists to scale
               breakthroughs in AI agents, privacy-preserving ML, and
               decentralized infrastructures for data, compute, and models.

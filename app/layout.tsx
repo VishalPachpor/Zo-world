@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ZO Accelerator",
+  title: "Zo Accelerator",
   description:
-    "ZO Accelerator - Fueling the next wave of innovation at the intersection of AI and blockchain",
-  generator: "ZO Accelerator",
+    "Zo Accelerator - Fueling the next wave of innovation at the intersection of AI and blockchain",
+  generator: "Zo Accelerator",
   icons: {
     icon: [{ url: "/zo-logo.png" }, { url: "/zo-logo.png" }],
     shortcut: "/zo-logo.png",
