@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     "ZO Accelerator - Fueling the next wave of innovation at the intersection of AI and blockchain",
   generator: "ZO Accelerator",
   icons: {
-    icon: [{ url: "/zo-logo.png" }, { url: "/favicon.png" }],
-    shortcut: "/favicon.png",
+    icon: [{ url: "/zo-logo.png" }, { url: "/zo-logo.png" }],
+    shortcut: "/zo-logo.png",
     apple: "/zo-logo.png",
   },
 };
@@ -25,7 +25,7 @@ export default function RootLayout({
           href="https://fonts.cdnfonts.com/css/tt-hoves-pro-trial"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/zo-logo.png" />
         <link rel="apple-touch-icon" href="/zo-logo.png" />
       </head>
       <body className="font-sans">{children}</body>

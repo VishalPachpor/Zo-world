@@ -13,16 +13,16 @@ export default function Launchpads() {
 
         {/* Lower Section - 3 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-          {/* ZO Network */}
+          {/* zo Network */}
           <div className=" rounded-2xl p-8 flex flex-col items-center text-center space-y-4">
             <Image
-              src="/partnership.png"
-              alt="ZO Network"
+              src="/Vector.png"
+              alt="zo Network"
               width={100}
               height={100}
               className="rounded-lg"
             />
-            <h3 className="text-xl font-bold text-white">ZO Network</h3>
+            <h3 className="text-xl font-bold text-white">zo Network</h3>
             <p className="text-gray-400 text-sm">
               Access to a powerful network of AI and crypto leaders
             </p>
@@ -41,8 +41,8 @@ export default function Launchpads() {
             <Image
               src="/partnership.png"
               alt="Partners & Launchpads"
-              width={64}
-              height={64}
+              width={100}
+              height={100}
               className="mb-6"
             />
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -67,8 +67,8 @@ export default function Launchpads() {
             <Image
               src="/media.png"
               alt="Media Presence"
-              width={64}
-              height={64}
+              width={100}
+              height={100}
               className="mb-6"
             />
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -76,7 +76,7 @@ export default function Launchpads() {
             </h3>
             <p className="text-gray-300 text-base leading-relaxed mb-4">
               Get exposure to a global Web3-native audience and boost brand
-              awareness by leveraging ZO World's leading position in crypto
+              awareness by leveraging zo World's leading position in crypto
               media.
             </p>
             <a

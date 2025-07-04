@@ -56,20 +56,20 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Get In Touch</h3>
             <div className="space-y-4">
               <a
-                href="mailto:accelerator@zo.xyz"
+                href="mailto:venture@zo.xyz"
                 className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors"
               >
                 <MailIcon className="w-5 h-5" />
-                <span className="text-sm">accelerator@zo.xyz</span>
+                <span className="text-sm">venture@zo.xyz</span>
               </a>
               <a
-                href="https://t.me/ZO_Accelerator"
+                href="https://t.me/shabbiryk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors"
               >
                 <SendIcon className="w-5 h-5" />
-                <span className="text-sm">Telegram: @ZO_Accelerator</span>
+                <span className="text-sm">Telegram: @shabbiryk</span>
               </a>
               <div className="flex items-center space-x-3 text-gray-400">
                 <CalendarDaysIcon className="w-5 h-5" />
