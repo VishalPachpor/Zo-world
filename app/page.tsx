@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Advantages from "@/components/Advantages";
 import Launchpads from "@/components/Launchpads";
 import ProgramAgenda from "@/components/ProgramAgenda";
-import Success from "@/components/Success";
 import Mentors from "@/components/Mentors";
 import LearnMore from "@/components/LearnMore";
 import FAQ from "@/components/FAQ";
@@ -27,9 +26,6 @@ export default function Home() {
           <ProgramAgenda />
         </div>
         <Launchpads />
-        <div id="testimonials">
-          <Success />
-        </div>
         <div id="mentors">
           <Mentors />
           <LearnMore />
