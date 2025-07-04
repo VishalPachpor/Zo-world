@@ -46,21 +46,20 @@ export default function Mentors() {
     },
     {
       id: 5,
-      name: "Stefano",
+      name: "Stefano Bury",
       title: "Investment Thesis Expert",
       company: "Virtuals Ventures",
-      image: "/placeholder-user.jpg",
-      social:
-        "https://www.linkedin.com/in/stefano-virtuals/?originalSubdomain=sg",
+      image: "/mentors/stefano.png",
+      social: "https://www.linkedin.com/in/stefanobury/",
       bio: "Specialist in investment thesis for AI projects and venture strategy.",
     },
     {
       id: 6,
-      name: "Ahan",
+      name: "Ahan Rajgor",
       title: "Ecosystem & Token Expert",
       company: "BFF",
-      image: "/placeholder-user.jpg",
-      social: "https://www.linkedin.com/in/ahan-bff/?originalSubdomain=sg",
+      image: "/mentors/ahan.png",
+      social: "https://www.linkedin.com/in/ahan-rajgor-4567a9139/",
       bio: "Expert on ecosystem fit, PMF delivery, and token model vetting.",
     },
     {
