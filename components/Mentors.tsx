@@ -100,15 +100,6 @@ export default function Mentors() {
       bio: "Leading crypto legal expert with 46K+ followers, specializing in compliance and DAO structuring.",
     },
     {
-      id: 11,
-      name: "Jonas",
-      title: "Growth Tools Expert",
-      company: "Ape Terminal",
-      image: "/placeholder-user.jpg",
-      social: "https://www.linkedin.com/in/jonas-ape-terminal",
-      bio: "Specialist in existing growth tools and strategies for crypto founders.",
-    },
-    {
       id: 12,
       name: "Kevin Jung",
       title: "Tokenomics Expert",
@@ -116,15 +107,6 @@ export default function Mentors() {
       image: "/mentors/kevin.png",
       social: "https://www.linkedin.com/in/kevinhjung/",
       bio: "Deep expertise in tokenomics design and token economic models.",
-    },
-    {
-      id: 13,
-      name: "Suhrad Makwana",
-      title: "Security Expert",
-      company: "Securr",
-      image: "/mentors/suhrad.png",
-      social: "https://www.linkedin.com/in/suhrad-makwana-205/",
-      bio: "Security by design expert focused on avoiding exploits in AI x Crypto projects.",
     },
   ];
 
