@@ -4,13 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TT Hoves Pro Trial Font Face */
-@font-face {
-  font-family: 'TT Hoves Pro Trial';
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-  font-display: swap;
-}
-
 /* Accelerator Text Effects */
 .accelerator-text {
   @apply font-light uppercase tracking-tighter leading-none font-sans;
@@ -63,7 +56,8 @@
 html,
 body {
   background-color: #000000;
-  font-family: "TT Hoves Pro Trial", sans-serif;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {

@@ -11,8 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "tt-hoves": ['"TT Hoves Pro Trial"', "sans-serif"],
-        sans: ['"TT Hoves Pro Trial"', "sans-serif"],
+        sans: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "radial-gradient":

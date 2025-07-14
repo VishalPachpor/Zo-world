@@ -21,10 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://fonts.cdnfonts.com/css/tt-hoves-pro-trial"
-          rel="stylesheet"
-        />
         <link rel="icon" type="image/png" href="/zo-logo.png" />
         <link rel="apple-touch-icon" href="/zo-logo.png" />
       </head>

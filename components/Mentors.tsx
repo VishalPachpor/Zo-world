@@ -181,7 +181,7 @@ export default function Mentors() {
               {Array.from({ length: totalSlides }).map((_, slideIndex) => (
                 <div
                   key={slideIndex}
-                  className="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                  className="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch h-full"
                 >
                   {mentors
                     .slice(
@@ -192,7 +192,7 @@ export default function Mentors() {
                       <div
                         key={mentor.id}
                         onClick={() => handleMentorClick(mentor.social)}
-                        className="bg-gray-900 rounded-2xl p-6 hover:bg-gray-800 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-xl group"
+                        className="bg-gray-900 rounded-2xl p-6 hover:bg-gray-800 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-xl group min-h-[400px] h-full flex flex-col justify-between"
                       >
                         {/* Mentor Image */}
                         <div className="relative mb-6">
@@ -212,7 +212,7 @@ export default function Mentors() {
                         </div>
 
                         {/* Mentor Info */}
-                        <div className="text-center">
+                        <div className="text-center flex-1 flex flex-col justify-center">
                           <h3 className="text-xl font-semibold text-white mb-1">
                             {mentor.name}
                           </h3>
